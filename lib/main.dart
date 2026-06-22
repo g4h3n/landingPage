@@ -114,7 +114,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     ],
                   ),
                   Container(
-                    color: Color(0xff0b0b0b),
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                    ),
                     height: h * 0.35,
                     child: Stack(
                       children: [
@@ -134,7 +136,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 height: h * 0.35,
                                 padding: EdgeInsets.all(h * 0.06),
                                 alignment: Alignment.centerLeft,
-                                color: Color.fromARGB(170, 22, 20, 20),
+                                color: Color.fromARGB(200, 11, 11, 11),
                                 child: Column(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
@@ -183,62 +185,15 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   Container(
                       padding: EdgeInsets.all(h * 0.02),
-                      color: Color.fromARGB(255, 0, 0, 0),
-                      alignment: Alignment.centerLeft,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Container(
-                            alignment: Alignment.centerLeft,
-                            child: Image.asset(
-                              "assets/caneta.png",
-                              width: w * 0.3,
-                            ),
-                          ),
-                          SizedBox(
-                              width: w * 0.6,
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Text(
-                                      "AS 2 PARTES MAIS DIFÌCEIS DE COMPÔR UMA MÙSICA\n ",
-                                      textAlign: TextAlign.left,
-                                      style: TextStyle(
-                                          shadows: <Shadow>[
-                                            Shadow(
-                                                offset: Offset(-2, 0),
-                                                blurRadius: 2,
-                                                color: Color.fromARGB(
-                                                    255, 151, 0, 109))
-                                          ],
-                                          fontFamily: 'Mesmerize',
-                                          fontSize: h * 0.02,
-                                          color: Color(0xffCC00D0))),
-                                  Text(
-                                      "1. decorar a teoria musical\n\n2. escolher por onde começar, sem qualquer noção do que cada nota evoca",
-                                      textAlign: TextAlign.left,
-                                      style: TextStyle(
-                                          shadows: <Shadow>[
-                                            Shadow(
-                                                offset: Offset(0, 0),
-                                                blurRadius: 1,
-                                                color: Color(0xffb0b0b0))
-                                          ],
-                                          fontFamily: 'Mesmerize',
-                                          fontSize: h * 0.015,
-                                          color: Color.fromARGB(
-                                              255, 113, 113, 113)))
-                                ],
-                              ))
-                        ],
-                      )),
-                  Container(
-                      padding: EdgeInsets.all(h * 0.02),
                       height: h * 0.6,
                       width: double.infinity,
                       alignment: Alignment.center,
                       decoration: BoxDecoration(
                         image: DecorationImage(
+                          colorFilter: ColorFilter.mode(
+                              const Color.fromARGB(255, 103, 0, 91)
+                                  .withOpacity(0.5),
+                              BlendMode.darken),
                           image: AssetImage("assets/dancing.jpg"),
                           fit: BoxFit.cover,
                         ),
@@ -247,7 +202,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
-                              "MAS A MÙSICA È UMA LINGUAGEM NATURAL DO SER HUMANO\n",
+                              "A MÙSICA È UMA LINGUAGEM NATURAL DO SER HUMANO\n",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   shadows: <Shadow>[
@@ -275,7 +230,16 @@ class _MyHomePageState extends State<MyHomePage> {
                         ],
                       )),
                   Container(
-                    color: Colors.black,
+                    padding: EdgeInsets.all(h * 0.02),
+                    decoration: BoxDecoration(
+                        color: Colors.black,
+                        boxShadow: <BoxShadow>[
+                          BoxShadow(
+                              blurStyle: BlurStyle.solid,
+                              offset: Offset(0, 0),
+                              blurRadius: 50,
+                              color: Color.fromARGB(50, 255, 255, 255))
+                        ]),
                     width: double.infinity,
                     child: Text("EXPERIMENTE VOCÊ MESMO",
                         textAlign: TextAlign.center,
@@ -316,7 +280,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         color: const Color.fromARGB(255, 36, 36, 36),
                         width: double.infinity,
                         child: Text(
-                            "O MÈTODO ORCHARD È UM MÈTODO DE COMPOSIÇÃO DE 3 PASSOS",
+                            "O ORCHARD È UM MÈTODO DE COMPOSIÇÃO DE 3 PASSOS",
                             textAlign: TextAlign.left,
                             style: TextStyle(
                                 shadows: <Shadow>[
