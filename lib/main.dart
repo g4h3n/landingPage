@@ -183,7 +183,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   Container(
                       padding: EdgeInsets.all(h * 0.02),
-                      color: Color(0xff909090),
+                      color: Color.fromARGB(255, 0, 0, 0),
                       alignment: Alignment.centerLeft,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -207,8 +207,9 @@ class _MyHomePageState extends State<MyHomePage> {
                                           shadows: <Shadow>[
                                             Shadow(
                                                 offset: Offset(-2, 0),
-                                                blurRadius: 6,
-                                                color: Color(0xffBFBFBF))
+                                                blurRadius: 2,
+                                                color: Color.fromARGB(
+                                                    255, 151, 0, 109))
                                           ],
                                           fontFamily: 'Mesmerize',
                                           fontSize: h * 0.02,
@@ -225,7 +226,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                           ],
                                           fontFamily: 'Mesmerize',
                                           fontSize: h * 0.015,
-                                          color: Color(0xff0f0f0f)))
+                                          color: Color.fromARGB(
+                                              255, 113, 113, 113)))
                                 ],
                               ))
                         ],
@@ -258,7 +260,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   fontSize: h * 0.03,
                                   color: Color(0xffCC00D0))),
                           Text(
-                              "cada som abre o apetite para outro que harmoniza com ele\n\n este para o pròximo, e assim por diante…",
+                              "cada som abre o apetite para outro que harmoniza com ele\n\n este para o pròximo\n\n e assim por diante…",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   shadows: <Shadow>[
