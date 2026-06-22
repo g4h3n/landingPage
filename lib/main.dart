@@ -186,10 +186,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     width: double.infinity,
                     height: h * 0.8,
                     alignment: Alignment.center,
-                    child: AnimatedSwitcher(
-                      duration: Duration(milliseconds: 350),
-                      child: minigame,
-                    ),
+                    child: minigame,
                   )
                 ],
               ),
