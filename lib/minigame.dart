@@ -1,4 +1,8 @@
+// ignore_for_file: unused_import
+
 import 'package:Orchard/start.dart';
+import 'package:Orchard/harmony.dart';
+import 'package:Orchard/melody.dart';
 import 'package:flutter/material.dart';
 
 class Minigame extends StatefulWidget {
