@@ -182,6 +182,112 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                   Container(
+                      padding: EdgeInsets.all(h * 0.02),
+                      color: Color(0xff909090),
+                      alignment: Alignment.centerLeft,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Container(
+                            alignment: Alignment.centerLeft,
+                            child: Image.asset(
+                              "assets/caneta.png",
+                              width: w * 0.3,
+                            ),
+                          ),
+                          SizedBox(
+                              width: w * 0.6,
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text(
+                                      "AS 2 PARTES MAIS DIFÌCEIS DE COMPÔR UMA MÙSICA\n ",
+                                      textAlign: TextAlign.left,
+                                      style: TextStyle(
+                                          shadows: <Shadow>[
+                                            Shadow(
+                                                offset: Offset(-2, 0),
+                                                blurRadius: 6,
+                                                color: Color(0xffBFBFBF))
+                                          ],
+                                          fontFamily: 'Mesmerize',
+                                          fontSize: h * 0.02,
+                                          color: Color(0xffCC00D0))),
+                                  Text(
+                                      "1. decorar a teoria musical\n\n2. escolher por onde começar, sem qualquer noção do que cada nota evoca",
+                                      textAlign: TextAlign.left,
+                                      style: TextStyle(
+                                          shadows: <Shadow>[
+                                            Shadow(
+                                                offset: Offset(0, 0),
+                                                blurRadius: 1,
+                                                color: Color(0xffb0b0b0))
+                                          ],
+                                          fontFamily: 'Mesmerize',
+                                          fontSize: h * 0.015,
+                                          color: Color(0xff0f0f0f)))
+                                ],
+                              ))
+                        ],
+                      )),
+                  Container(
+                      padding: EdgeInsets.all(h * 0.02),
+                      height: h * 0.6,
+                      width: double.infinity,
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage("assets/dancing.jpg"),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                              "MAS A MÙSICA È UMA LINGUAGEM NATURAL DO SER HUMANO\n",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  shadows: <Shadow>[
+                                    Shadow(
+                                        offset: Offset(0, 0),
+                                        blurRadius: 1,
+                                        color: Color(0xffCC00D0))
+                                  ],
+                                  fontFamily: 'Mesmerize',
+                                  fontSize: h * 0.03,
+                                  color: Color(0xffCC00D0))),
+                          Text(
+                              "cada som abre o apetite para outro que harmoniza com ele\n\n este para o pròximo, e assim por diante…",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  shadows: <Shadow>[
+                                    Shadow(
+                                        offset: Offset(0, 0),
+                                        blurRadius: 1,
+                                        color: Color(0xffCC00D0))
+                                  ],
+                                  fontFamily: 'Mesmerize',
+                                  fontSize: h * 0.02,
+                                  color: Color(0xffffffff)))
+                        ],
+                      )),
+                  Container(
+                    color: Colors.black,
+                    child: Text("EXPERIMENTE VOCÊ MESMO",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            shadows: <Shadow>[
+                              Shadow(
+                                  offset: Offset(0, 0),
+                                  blurRadius: 1,
+                                  color: Color(0xffCC00D0))
+                            ],
+                            fontFamily: 'Mesmerize',
+                            fontSize: h * 0.03,
+                            color: Color(0xffCC00D0))),
+                  ),
+                  Container(
                     color: Colors.black,
                     width: double.infinity,
                     height: h * 0.8,

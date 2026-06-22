@@ -57,6 +57,9 @@ flutter:
     - assets/Orchard text.png
     - assets/orchardPhone.png
     - assets/fundoTitulo.jpg
+    - assets/caneta.png
+    - assets/dancing.jpg
+
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
