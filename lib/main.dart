@@ -253,7 +253,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   shadows: <Shadow>[
                                     Shadow(
                                         offset: Offset(0, 0),
-                                        blurRadius: 1,
+                                        blurRadius: 10,
                                         color: Color(0xffCC00D0))
                                   ],
                                   fontFamily: 'Mesmerize',
@@ -266,7 +266,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   shadows: <Shadow>[
                                     Shadow(
                                         offset: Offset(0, 0),
-                                        blurRadius: 1,
+                                        blurRadius: 10,
                                         color: Color(0xffCC00D0))
                                   ],
                                   fontFamily: 'Mesmerize',
@@ -276,6 +276,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       )),
                   Container(
                     color: Colors.black,
+                    width: double.infinity,
                     child: Text("EXPERIMENTE VOCÊ MESMO",
                         textAlign: TextAlign.center,
                         style: TextStyle(
@@ -288,6 +289,66 @@ class _MyHomePageState extends State<MyHomePage> {
                             fontFamily: 'Mesmerize',
                             fontSize: h * 0.03,
                             color: Color(0xffCC00D0))),
+                  ),
+                  Container(
+                    color: Colors.black,
+                    width: double.infinity,
+                    padding: EdgeInsets.only(bottom: h * 0.02),
+                    child: Text(
+                        "a teoria musical è um mapa que o compositor usa para garimpar emoções nas notas musicais",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            shadows: <Shadow>[
+                              Shadow(
+                                  offset: Offset(0, 0),
+                                  blurRadius: 1,
+                                  color: Color(0xffCC00D0))
+                            ],
+                            fontFamily: 'Mesmerize',
+                            fontSize: h * 0.015,
+                            color: Color(0xffffffff))),
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        padding: EdgeInsets.only(top: h * 0.02, left: h * 0.02),
+                        color: const Color.fromARGB(255, 36, 36, 36),
+                        width: double.infinity,
+                        child: Text(
+                            "O MÈTODO ORCHARD È UM MÈTODO DE COMPOSIÇÃO DE 3 PASSOS",
+                            textAlign: TextAlign.left,
+                            style: TextStyle(
+                                shadows: <Shadow>[
+                                  Shadow(
+                                      offset: Offset(0, 0),
+                                      blurRadius: 10,
+                                      color: Color(0xffffffff))
+                                ],
+                                fontFamily: 'Mesmerize',
+                                fontSize: h * 0.015,
+                                color: Color(0xffffffff))),
+                      ),
+                      Container(
+                        padding:
+                            EdgeInsets.only(bottom: h * 0.02, left: h * 0.02),
+                        color: const Color.fromARGB(255, 36, 36, 36),
+                        width: double.infinity,
+                        child: Text(
+                            "º sem decorar teoria\nº sem treinar coordenação motora\nº somente com seu celular",
+                            textAlign: TextAlign.left,
+                            style: TextStyle(
+                                shadows: <Shadow>[
+                                  Shadow(
+                                      offset: Offset(0, 0),
+                                      blurRadius: 10,
+                                      color: Color(0xffffffff))
+                                ],
+                                fontFamily: 'Mesmerize',
+                                fontSize: h * 0.015,
+                                color: Color(0xffffffff))),
+                      ),
+                    ],
                   ),
                   Container(
                     color: Colors.black,
