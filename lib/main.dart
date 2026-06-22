@@ -34,27 +34,17 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   final Uri _pslink = Uri.parse('https://linktw.in/zqejGu');
-
-  double opacity = 1;
-
-  Widget minigame = Minigame();
-  int level = 0;
-
-  @override
-  void initState() {
-    super.initState();
-  }
-
-  void levelUp() {
-    setState(() {
-      level++;
-    });
-  }
-
   Future<void> playStoreDeepLink() async {
     if (!await launchUrl(_pslink)) {
       throw Exception('Could not launch $_pslink');
     }
+  }
+
+  Widget minigame = Minigame();
+
+  @override
+  void initState() {
+    super.initState();
   }
 
   @override
@@ -192,6 +182,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         image: DecorationImage(
                           colorFilter: ColorFilter.mode(
                               const Color.fromARGB(255, 103, 0, 91)
+                                  // ignore: deprecated_member_use
                                   .withOpacity(0.5),
                               BlendMode.darken),
                           image: AssetImage("assets/dancing.jpg"),
