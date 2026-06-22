@@ -6,9 +6,7 @@ import 'package:Orchard/melody.dart';
 import 'package:flutter/material.dart';
 
 class Minigame extends StatefulWidget {
-  const Minigame({super.key, required this.levelUp});
-
-  final Function levelUp;
+  const Minigame({super.key});
 
   @override
   State<Minigame> createState() => MinigameState();

@@ -37,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   double opacity = 1;
 
-  late Widget minigame = Minigame(levelUp: levelUp);
+  late Widget minigame = Minigame();
   int level = 0;
 
   @override
